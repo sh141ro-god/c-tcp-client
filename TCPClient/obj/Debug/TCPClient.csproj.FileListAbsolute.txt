@@ -1,0 +1,7 @@
+C:\off\4 curs\7\TCPClient\TCPClient\bin\Debug\TCPClient.exe.config
+C:\off\4 curs\7\TCPClient\TCPClient\bin\Debug\TCPClient.exe
+C:\off\4 curs\7\TCPClient\TCPClient\bin\Debug\TCPClient.pdb
+C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference.cache
+C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
+C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.exe
+C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.pdb
