@@ -5,3 +5,10 @@ C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference
 C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
 C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.exe
 C:\off\4 curs\7\TCPClient\TCPClient\obj\Debug\TCPClient.pdb
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\bin\Debug\TCPClient.exe
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\bin\Debug\TCPClient.pdb
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference.cache
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\obj\Debug\TCPClient.exe
+C:\Users\222909071097-17\Desktop\test\c-tcp-client\TCPClient\obj\Debug\TCPClient.pdb

@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\off\\4 curs\\7\\TCPClient\\",
+  "WorkspaceRootPath": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|c:\\off\\4 curs\\7\\tcpclient\\tcpclient\\searcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|c:\\users\\222909071097-17\\desktop\\test\\c-tcp-client\\tcpclient\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|c:\\users\\222909071097-17\\desktop\\test\\c-tcp-client\\tcpclient\\searcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\searcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|c:\\off\\4 curs\\7\\tcpclient\\tcpclient\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|c:\\off\\4 curs\\7\\tcpclient\\tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\tcpclient\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4AA15CF-C52F-4351-BC55-E08D8DCE5C84}|TCPClient\\TCPClient.csproj|solutionrelative:tcpclient\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,25 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Connector.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Connector.cs",
+              "RelativeDocumentMoniker": "TCPClient\\Connector.cs",
+              "ToolTip": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Connector.cs",
+              "RelativeToolTip": "TCPClient\\Connector.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCAAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T06:22:48.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Searcher.cs",
-              "DocumentMoniker": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Searcher.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Searcher.cs",
               "RelativeDocumentMoniker": "TCPClient\\Searcher.cs",
-              "ToolTip": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Searcher.cs",
+              "ToolTip": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Searcher.cs",
               "RelativeToolTip": "TCPClient\\Searcher.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCgAAAAiAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T16:59:55.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Listener.cs",
-              "DocumentMoniker": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Listener.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Listener.cs",
               "RelativeDocumentMoniker": "TCPClient\\Listener.cs",
-              "ToolTip": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Listener.cs",
+              "ToolTip": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Listener.cs",
               "RelativeToolTip": "TCPClient\\Listener.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T16:57:57.947Z",
               "EditorCaption": ""
@@ -54,11 +71,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Program.cs",
               "RelativeDocumentMoniker": "TCPClient\\Program.cs",
-              "ToolTip": "C:\\off\\4 curs\\7\\TCPClient\\TCPClient\\Program.cs",
+              "ToolTip": "C:\\Users\\222909071097-17\\Desktop\\test\\c-tcp-client\\TCPClient\\Program.cs",
               "RelativeToolTip": "TCPClient\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T16:41:01.378Z",
               "EditorCaption": ""

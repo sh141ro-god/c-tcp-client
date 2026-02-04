@@ -20,22 +20,31 @@ namespace TCPClient
             byte[] discover = Encoding.UTF8.GetBytes("DISCOVER");
             for (int i = 1; i <= 254; i++)
             {
-                string ip = $"192.168.10.{i}";
-                IPEndPoint target = new IPEndPoint(IPAddress.Parse(ip), DISCOVERY_PORT);
-                UdpClient udp = new UdpClient();
-                udp.Client.ReceiveTimeout = 5000; 
-
-                udp.Send(discover, discover.Length, target);
-
-                IPEndPoint remote = null;
-                byte[] resp = udp.Receive(ref remote);
-                string msg = Encoding.UTF8.GetString(resp);
-
-                if (msg.StartsWith("HERE:"))
+                string ip = $"172.20.117.{i}";
+                if (ip != localIP)
                 {
-                    int port = int.Parse(msg.Substring(5));
-                    found[remote.Address.ToString()] = port;
+                    IPEndPoint target = new IPEndPoint(IPAddress.Parse(ip), DISCOVERY_PORT);
+                    UdpClient udp = new UdpClient();
+                    udp.Client.ReceiveTimeout = 5000;
+
+                    udp.Send(discover, discover.Length, target);
+
+                    IPEndPoint remote = null;
+                    string msg;
+                    try
+                    {
+                        byte[] resp = udp.Receive(ref remote);
+                        msg = Encoding.UTF8.GetString(resp);
+                    }
+                    catch { break; }
+
+                    if (msg.StartsWith("HERE:"))
+                    {
+                        int port = int.Parse(msg.Substring(5));
+                        found[remote.Address.ToString()] = port;
+                    }
                 }
+                { }
             }
         }
         static public void Print()
