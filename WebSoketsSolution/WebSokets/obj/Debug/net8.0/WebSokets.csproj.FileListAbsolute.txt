@@ -1,0 +1,42 @@
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.GeneratedMSBuildEditorConfig.editorconfig
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfoInputs.cache
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfo.cs
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.csproj.CoreCompileInputs.cache
+C:\off\trpo\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.exe
+C:\off\trpo\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.deps.json
+C:\off\trpo\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.runtimeconfig.json
+C:\off\trpo\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.dll
+C:\off\trpo\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.pdb
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.dll
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\refint\WebSokets.dll
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.pdb
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.genruntimeconfig.cache
+C:\off\trpo\WebSoketsSolution\WebSokets\obj\Debug\net8.0\ref\WebSokets.dll
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.exe
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.deps.json
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.runtimeconfig.json
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.dll
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.pdb
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.GeneratedMSBuildEditorConfig.editorconfig
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfoInputs.cache
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfo.cs
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.csproj.CoreCompileInputs.cache
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.dll
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\refint\WebSokets.dll
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.pdb
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.genruntimeconfig.cache
+C:\off\4_curs\4 curs\pls\isrpo\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\ref\WebSokets.dll
+C:\off\need\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.exe
+C:\off\need\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.deps.json
+C:\off\need\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.runtimeconfig.json
+C:\off\need\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.dll
+C:\off\need\7\WebSoketsSolution\WebSokets\bin\Debug\net8.0\WebSokets.pdb
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.GeneratedMSBuildEditorConfig.editorconfig
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfoInputs.cache
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.AssemblyInfo.cs
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.csproj.CoreCompileInputs.cache
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.dll
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\refint\WebSokets.dll
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.pdb
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\WebSokets.genruntimeconfig.cache
+C:\off\need\7\WebSoketsSolution\WebSokets\obj\Debug\net8.0\ref\WebSokets.dll

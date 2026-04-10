@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSokets", "WebSokets\WebSokets.csproj", "{76FEE67F-CB54-4A79-A122-D92F8D021208}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76FEE67F-CB54-4A79-A122-D92F8D021208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FEE67F-CB54-4A79-A122-D92F8D021208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FEE67F-CB54-4A79-A122-D92F8D021208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FEE67F-CB54-4A79-A122-D92F8D021208}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAACA139-C56D-4DB2-82E7-F40232F5A07E}
+	EndGlobalSection
+EndGlobal

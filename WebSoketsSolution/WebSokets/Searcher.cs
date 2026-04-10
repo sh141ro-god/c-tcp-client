@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WebSokets
+{
+    internal class Searcher
+    {
+        const int DISCOVERY_PORT = 40000;
+        static public Dictionary<string, int> found = new Dictionary<string, int>();
+        static public string localIP = "";
+        static public TcpClient currentTcp;
+
+        static public void Search()
+        {
+            byte[] discover = Encoding.UTF8.GetBytes("DISCOVER");
+            for (int i = 1; i <=30; i++)
+            {
+                string ip = $"172.20.117.{i}";
+                if (ip != localIP)
+                {
+                    IPEndPoint target = new IPEndPoint(IPAddress.Parse(ip), DISCOVERY_PORT);
+                    UdpClient udp = new UdpClient();
+                    udp.Client.ReceiveTimeout = 5000;
+
+                    udp.Send(discover, discover.Length, target);
+
+                    IPEndPoint remote = null;
+                    string msg;
+                    try
+                    {
+                        byte[] resp = udp.Receive(ref remote);
+                        msg = Encoding.UTF8.GetString(resp);
+                    }
+                    catch { break; }
+
+                    if (msg.StartsWith("HERE:"))
+                    {
+                        int port = int.Parse(msg.Substring(5));
+                        found[remote.Address.ToString()] = port;
+                    }
+                }
+                { }
+            }
+        }
+        static public void Print()
+        {
+            int i = 0;
+            foreach (var item in found)
+            {
+                i++;
+                Console.WriteLine($"{i}|{item.Key}:{item.Value}");
+            }
+        }
+        static public void Connect(IPAddress ip, int port)
+        {
+
+            currentTcp = new TcpClient();
+            currentTcp.Connect(ip, port);
+        }
+        static public void Write(string message) 
+        {
+            if (currentTcp.Connected) 
+            {
+                NetworkStream s = currentTcp.GetStream();
+
+                byte[] data = Encoding.UTF8.GetBytes(message);
+                s.Write(data, 0, data.Length);
+            }
+        }
+    }
+}
