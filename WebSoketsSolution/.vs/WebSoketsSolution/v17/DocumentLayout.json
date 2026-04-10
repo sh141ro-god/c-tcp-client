@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\off\\need\\7\\WebSoketsSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|c:\\off\\need\\7\\websoketssolution\\websokets\\echoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|solutionrelative:websokets\\echoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|c:\\off\\need\\7\\websoketssolution\\websokets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|solutionrelative:websokets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|c:\\off\\need\\7\\websoketssolution\\websokets\\echoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|solutionrelative:websokets\\echoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76FEE67F-CB54-4A79-A122-D92F8D021208}|WebSokets\\WebSokets.csproj|c:\\off\\need\\7\\websoketssolution\\websokets\\searcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EchoServer.cs",
               "DocumentMoniker": "C:\\off\\need\\7\\WebSoketsSolution\\WebSokets\\EchoServer.cs",
               "RelativeDocumentMoniker": "WebSokets\\EchoServer.cs",
@@ -51,8 +51,7 @@
               "RelativeToolTip": "WebSokets\\Searcher.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAkwGgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:42:46.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T07:42:46.548Z"
             },
             {
               "$type": "Document",
@@ -68,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\off\\need\\7\\WebSoketsSolution\\WebSokets\\Program.cs",
               "RelativeDocumentMoniker": "WebSokets\\Program.cs",
               "ToolTip": "C:\\off\\need\\7\\WebSoketsSolution\\WebSokets\\Program.cs",
               "RelativeToolTip": "WebSokets\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswD0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T14:39:14.772Z",
               "EditorCaption": ""
