@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebSokets")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16246f2b2cec479452a63fe81333ccab7368c74c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSokets")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSokets")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

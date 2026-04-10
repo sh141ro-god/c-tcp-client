@@ -1,75 +1,126 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace WebSokets
+namespace WebSockets
 {
-    internal class Searcher
+    public class Searcher
     {
+        //const int DISCOVERY_PORT = 40000;
         const int DISCOVERY_PORT = 40000;
-        static public Dictionary<string, int> found = new Dictionary<string, int>();
-        static public string localIP = "";
-        static public TcpClient currentTcp;
+        const int TIMEOUT_MS = 500;
 
-        static public void Search()
+        public static Dictionary<string, int> Found { get; } = new();
+        public static TcpClient CurrentTcp { get; private set; }
+
+        // Вписываешь свой IP руками
+        public static string localIP = "172.20.117.3";
+
+        public static void Search()
         {
+            Found.Clear();
             byte[] discover = Encoding.UTF8.GetBytes("DISCOVER");
-            for (int i = 1; i <=30; i++)
-            {
-                string ip = $"172.20.117.{i}";
-                if (ip != localIP)
-                {
-                    IPEndPoint target = new IPEndPoint(IPAddress.Parse(ip), DISCOVERY_PORT);
-                    UdpClient udp = new UdpClient();
-                    udp.Client.ReceiveTimeout = 5000;
 
+            // Берём подсеть из своего IP автоматически
+            string subnet = localIP.Substring(0, localIP.LastIndexOf('.'));
+
+            Console.WriteLine($"[Searcher] Сканирование {subnet}.1-254, пропускаю {localIP}...");
+
+            for (int i = 1; i <= 254; i++)
+            {
+                string ip = $"{subnet}.{i}";
+                if (ip == localIP) continue;
+
+                try
+                {
+                    using UdpClient udp = new UdpClient();
+                    udp.Client.ReceiveTimeout = TIMEOUT_MS;
+
+                    IPEndPoint target = new IPEndPoint(IPAddress.Parse(ip), DISCOVERY_PORT);
                     udp.Send(discover, discover.Length, target);
 
                     IPEndPoint remote = null;
-                    string msg;
-                    try
-                    {
-                        byte[] resp = udp.Receive(ref remote);
-                        msg = Encoding.UTF8.GetString(resp);
-                    }
-                    catch { break; }
+                    byte[] resp = udp.Receive(ref remote);
+                    string msg = Encoding.UTF8.GetString(resp);
 
-                    if (msg.StartsWith("HERE:"))
+                    if (msg.StartsWith("HERE:") && int.TryParse(msg.Substring(5), out int port))
                     {
-                        int port = int.Parse(msg.Substring(5));
-                        found[remote.Address.ToString()] = port;
+                        string foundIp = remote.Address.ToString();
+                        Found[foundIp] = port;
+                        Console.WriteLine($"[Searcher] Найден: {foundIp}:{port}");
+                        break;
                     }
                 }
-                { }
+                catch (SocketException) { /* таймаут — идём дальше */ }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[Searcher] {ip}: {ex.Message}");
+                }
             }
+
+            Console.WriteLine($"[Searcher] Готово. Найдено: {Found.Count}");
         }
-        static public void Print()
+
+        public static void Print()
         {
             int i = 0;
-            foreach (var item in found)
+            foreach (var item in Found)
+                Console.WriteLine($"{++i}| {item.Key}:{item.Value}");
+        }
+
+        public static bool Connect(string ip, int port)
+        {
+            try
             {
-                i++;
-                Console.WriteLine($"{i}|{item.Key}:{item.Value}");
+                CurrentTcp?.Close();
+                CurrentTcp = new TcpClient();
+                CurrentTcp.Connect(IPAddress.Parse(ip), port);
+                Console.WriteLine($"[Searcher] Подключён к {ip}:{port}");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[Searcher] Ошибка подключения: {ex.Message}");
+                return false;
             }
         }
-        static public void Connect(IPAddress ip, int port)
-        {
 
-            currentTcp = new TcpClient();
-            currentTcp.Connect(ip, port);
-        }
-        static public void Write(string message) 
+        public static void Write(string message)
         {
-            if (currentTcp.Connected) 
+            if (CurrentTcp?.Connected != true)
             {
-                NetworkStream s = currentTcp.GetStream();
+                Console.WriteLine("[Searcher] Нет подключения");
+                return;
+            }
 
+            try
+            {
+                NetworkStream s = CurrentTcp.GetStream();
                 byte[] data = Encoding.UTF8.GetBytes(message);
                 s.Write(data, 0, data.Length);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[Searcher] Ошибка отправки: {ex.Message}");
+            }
+        }
+        static public string Read()
+        {
+            if (CurrentTcp?.Connected != true) return null;
+
+            try
+            {
+                NetworkStream s = CurrentTcp.GetStream();
+                byte[] buffer = new byte[1024];
+                int bytes = s.Read(buffer, 0, buffer.Length);
+                return Encoding.UTF8.GetString(buffer, 0, bytes);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[Searcher] Ошибка чтения: {ex.Message}");
+                return null;
             }
         }
     }

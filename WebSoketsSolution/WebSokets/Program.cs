@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using WebSockets;
 using WebSokets;
 
 Console.WriteLine("Select mode:");
@@ -23,7 +24,7 @@ else if (choice == "2")
     Searcher.Search();
     Searcher.Print();
 
-    if (Searcher.found.Count == 0)
+    if (Searcher.Found.Count == 0)
     {
         Console.WriteLine("No hosts found.");
         return;
@@ -32,11 +33,11 @@ else if (choice == "2")
     Console.Write("Enter number to connect to: ");
     int index = int.Parse(Console.ReadLine()) - 1;
 
-    var list = new System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, int>>(Searcher.found);
+    var list = new System.Collections.Generic.List<System.Collections.Generic.KeyValuePair<string, int>>(Searcher.Found);
     string ip = list[index].Key;
     int port = list[index].Value;
 
-    Searcher.Connect(IPAddress.Parse(ip), port);
+    Searcher.Connect(ip, port);
     Console.WriteLine($"Connected to {ip}:{port}");
 
     while (true)
@@ -54,6 +55,20 @@ else if (choice == "3")
 else if (choice == "4")
 {
     HttpServer.Start();
+}
+else if (choice == "5")
+{
+    // —начала найти устройства
+    Searcher.Search();
+    Searcher.Print();
+
+    // ¬з€ть IP найденного устройства, но подключитьс€ на порт EchoServer
+    var first = Searcher.Found.First();
+    string ip = first.Key; // IP берЄм из обнаружени€
+    Searcher.Connect(ip, 55000); // порт указываем вручную Ч EchoServer
+
+    // ќтправить
+    Searcher.Write("Hello!");
 }
 else
 {
