@@ -58,16 +58,16 @@ else if (choice == "4")
 }
 else if (choice == "5")
 {
-    // —начала найти устройства
+   
     Searcher.Search();
     Searcher.Print();
 
-    // ¬з€ть IP найденного устройства, но подключитьс€ на порт EchoServer
-    var first = Searcher.Found.First();
-    string ip = first.Key; // IP берЄм из обнаружени€
-    Searcher.Connect(ip, 55000); // порт указываем вручную Ч EchoServer
 
-    // ќтправить
+    var first = Searcher.Found.First();
+    string ip = first.Key; 
+    Searcher.Connect(ip, 55000); 
+
+
     Searcher.Write("Hello!");
 }
 else
